@@ -121,6 +121,46 @@
         display: flex;
         justify-content: center;
     }
+
+    @media (max-width: 768px) {
+
+    .text {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: large;
+    }
+
+    .content-row {
+        flex-direction: column;
+        right: 0;
+        gap: 30px;
+    }
+
+    .cities-row {
+        grid-template-columns: 130px 130px;
+        gap: 20px;
+    }
+
+    .Cityimg {
+        left: 0;
+        width: 290px;
+        height: 200px;
+    }
+
+    .maincont {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .Nav {
+        font-size: large;
+        padding: 20px;
+    }
+
+    .labels-row {
+        display: none;
+    }
+}
 </style>
 
 <body>
