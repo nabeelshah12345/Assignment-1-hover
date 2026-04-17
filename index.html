@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover Assignment - 1</title>
+    <title>Hover Assignment</title>
 </head>
 <style>
-    * { margin: 0; padding: 0; }
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-    body { background-color: rgb(136, 207, 252); }
+    body {
+        background-color: rgb(136, 207, 252);
+    }
 
     .Nav {
         background-color: rgb(0, 162, 255);
@@ -51,7 +57,8 @@
         margin-bottom: 30px;
     }
 
-    .cities, .enlarge {
+    .cities,
+    .enlarge {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: x-large;
         font-weight: bold;
@@ -83,10 +90,9 @@
         box-shadow: 1px 2px 10px black;
     }
 
-    .city:hover 
-    {
-         transform: scale(1.2);
-     }
+    .city:hover {
+        transform: scale(1.2);
+    }
 
     .Cityimg {
         width: 350px;
@@ -124,43 +130,43 @@
 
     @media (max-width: 768px) {
 
-    .text {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: large;
-    }
+        .text {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: large;
+        }
 
-    .content-row {
-        flex-direction: column;
-        right: 0;
-        gap: 30px;
-    }
+        .content-row {
+            flex-direction: column;
+            right: 0;
+            gap: 30px;
+        }
 
-    .cities-row {
-        grid-template-columns: 130px 130px;
-        gap: 20px;
-    }
+        .cities-row {
+            grid-template-columns: 130px 130px;
+            gap: 20px;
+        }
 
-    .Cityimg {
-        left: 0;
-        width: 290px;
-        height: 200px;
-    }
+        .Cityimg {
+            left: 0;
+            width: 290px;
+            height: 200px;
+        }
 
-    .maincont {
-        margin: 20px 15px;
-        padding: 20px;
-    }
+        .maincont {
+            margin: 20px 15px;
+            padding: 20px;
+        }
 
-    .Nav {
-        font-size: large;
-        padding: 20px;
-    }
+        .Nav {
+            font-size: large;
+            padding: 20px;
+        }
 
-    .labels-row {
-        display: none;
+        .labels-row {
+            display: none;
+        }
     }
-}
 </style>
 
 <body>
@@ -176,7 +182,7 @@
 
         <div class="content-row">
 
-            <div class="cities-row"> 
+            <div class="cities-row">
                 <div class="city" id="city1">Gujrat</div>
                 <div class="city" id="city2">Islamabad</div>
                 <div class="city" id="city3">Lahore</div>
@@ -184,10 +190,10 @@
             </div>
 
             <div class="Cityimg">
-                <img id="img1" src="Gujrat.jpg"    alt="Gujrat">
+                <img id="img1" src="Gujrat.jpg" alt="Gujrat">
                 <img id="img2" src="Islamabad.jpg" alt="Islamabad">
-                <img id="img3" src="Lahore1.jpg"    alt="Lahore">
-                <img id="img4" src="Karachi.jpg"   alt="Karachi">
+                <img id="img3" src="Lahore1.jpg" alt="Lahore">
+                <img id="img4" src="Karachi.jpg" alt="Karachi">
             </div>
 
         </div>
@@ -198,7 +204,7 @@
 </body>
 
 <script>
-    
+
     const city1 = document.getElementById('city1');
     const city2 = document.getElementById('city2');
     const city3 = document.getElementById('city3');
@@ -209,7 +215,7 @@
     const img3 = document.getElementById('img3');
     const img4 = document.getElementById('img4');
 
-   
+
     function hideAll() {
         img1.style.opacity = '0';
         img2.style.opacity = '0';
@@ -217,28 +223,28 @@
         img4.style.opacity = '0';
     }
 
-   
+
 
     // Gujrat hover hone pe Gujrat ki image dikhe
-    city1.addEventListener('mouseover', function() {
+    city1.addEventListener('mouseover', function () {
         hideAll();
         img1.style.opacity = '1';
     });
 
     // Islamabad hover hone pe Islamabad ki image dikhe
-    city2.addEventListener('mouseover', function() {
+    city2.addEventListener('mouseover', function () {
         hideAll();
         img2.style.opacity = '1';
     });
 
     // Lahore hover hone pe Lahore ki image dikhe
-    city3.addEventListener('mouseover', function() {
+    city3.addEventListener('mouseover', function () {
         hideAll();
         img3.style.opacity = '1';
     });
 
     // Karachi hover hone pe Karachi ki image dikhe
-    city4.addEventListener('mouseover', function() {
+    city4.addEventListener('mouseover', function () {
         hideAll();
         img4.style.opacity = '1';
     });
